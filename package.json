@@ -1,0 +1,22 @@
+{
+  "name": "exalt.biz",
+  "version": "1.0.0",
+  "description": "exalt website",
+  "main": "build.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meodai/exalt.biz.git"
+  },
+  "keywords": [
+    "website"
+  ],
+  "author": "meodai@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meodai/exalt.biz/issues"
+  },
+  "homepage": "https://github.com/meodai/exalt.biz#readme"
+}
