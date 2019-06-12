@@ -211,8 +211,7 @@ blockquote {
 }
 
 .footer {
-  margin-top: 2rem;
-  padding-top: 1rem;
+  padding-top: 3rem;
   padding-bottom: 1rem;
   background: var(--color-background);
   color: var(--color-background--contrast);
@@ -221,6 +220,7 @@ blockquote {
   background-size: 25% auto;
   background-repeat: no-repeat;
   background-position: 90% bottom;
+  background-attachment: fixed;
 }
 
 .exalt-all {
