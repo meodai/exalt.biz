@@ -1,5 +1,5 @@
 # exalt.biz
-http://exalt.biz website
+http://exalt.biz website (https://ecstatic-volhard-256fbd.netlify.com/)
 
 # edit contents
 [edit text on the website here](https://github.com/meodai/exalt.biz/blob/master/data.yml)
