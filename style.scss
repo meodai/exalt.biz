@@ -60,20 +60,6 @@ blockquote {
   font-weight: 800;
   font-size: 3.5rem;
   margin: .5em 0;
-
-  p {
-    /*
-    &::before,
-    &::after {
-      font-size: .75em;
-    }
-    &::before {
-      content: '“ ';
-    }
-    &::after {
-      content: '”'
-    }*/
-  }
 }
 
 .quote-section {
@@ -82,7 +68,6 @@ blockquote {
 
 .quote-section__fake {
   visibility: hidden;
-  //opacity: .5;
 }
 
 .typed-cursor {
@@ -233,4 +218,8 @@ blockquote {
   width: 100%;
   margin-bottom: -1rem;
   // margin-bottom: -2rem;
+}
+
+#quotes {
+  display: none;
 }
