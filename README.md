@@ -1,7 +1,7 @@
 # exalt.biz
 http://exalt.biz website
 
-# data
+# edit contents
 [edit text on the website here](https://github.com/meodai/exalt.biz/blob/master/data.yml)
 
 # local installation
