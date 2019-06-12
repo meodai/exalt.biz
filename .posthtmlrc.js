@@ -12,6 +12,9 @@ module.exports = {
     "posthtml-expressions": {
       locals: data,
     },
+    "posthtml-md": {
+      root: "./"
+    },
   }
 };
 
