@@ -1,6 +1,9 @@
 # exalt.biz
 http://exalt.biz website
 
+# data
+[edit text on the website here](https://github.com/meodai/exalt.biz/blob/master/data.yml)
+
 # local installation
 This setup uses node and NPM to built the website statically.
 
