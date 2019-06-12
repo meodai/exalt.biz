@@ -214,7 +214,7 @@ blockquote p {
   background: var(--color-background);
   color: var(--color-background--contrast);
   line-height: 1.4;
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/102565/exalt-all.png);
+  background-image: url(/exalt-all.6a45472f.png);
   background-size: 25% auto;
   background-repeat: no-repeat;
   background-position: 90% bottom;
