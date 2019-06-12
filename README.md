@@ -11,3 +11,7 @@ This setup uses node and NPM to built the website statically.
 2. use the terminal/command-line to navigate to the folder where you checked out the project
 3. install deps by typing `npm install`
 4. once done type `npm start` to work on the project
+
+# lisence 
+© David Aerne
+Feel free to do whatever with the sources. The illustrations are owned by the client. Don't share or reuse them
