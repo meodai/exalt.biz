@@ -4,7 +4,9 @@
   "description": "exalt website",
   "main": "build.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run dev",
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "repository": {
     "type": "git",
@@ -18,5 +20,10 @@
   "bugs": {
     "url": "https://github.com/meodai/exalt.biz/issues"
   },
-  "homepage": "https://github.com/meodai/exalt.biz#readme"
+  "homepage": "https://github.com/meodai/exalt.biz#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3",
+    "posthtml-expressions": "^1.1.1",
+    "posthtml-load-config": "^1.0.0"
+  }
 }

@@ -1,0 +1,329 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+<meta name="robots" content="noindex">
+<title>Exalt</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<style>
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Eczar:400,800|Work+Sans:500");
+:root {
+  --c-blue: #a2dfff;
+  --c-salmon: #f8c1ac;
+  --c-mint: #8dffcd;
+  --c-wine: #814157;
+  --c-yellow: #fffd4cfa;
+  --c-white: #fff;
+  --color-background: var(--c-wine);
+  --color-background--contrast: var(--c-white);
+  --color-highlight: #ff6c6c;
+}
+
+::-moz-selection {
+  background: var(--color-highlight);
+  color: #fff;
+}
+
+::selection {
+  background: var(--color-highlight);
+  color: #fff;
+}
+
+.is-hidden {
+  display: none;
+}
+
+html {
+  font-size: calc(1.55vw + .4rem);
+  font-family: 'Work Sans', sans-serif;
+}
+@media all and (max-width: 736px) {
+  html {
+    font-size: calc(1.55vw + .55rem);
+  }
+}
+
+a {
+  color: #ff3939;
+  text-decoration: none;
+  display: inline-block;
+  padding: .1em 0.35em;
+  margin: -.1em -0.35em;
+}
+a:hover {
+  background: var(--color-highlight);
+  color: #fff;
+}
+
+h2, h3 {
+  font-family: 'Eczar', serif;
+  font-weight: 800;
+}
+
+strong {
+  font-family: 'Eczar', serif;
+  font-weight: 800;
+}
+
+blockquote {
+  font-family: 'Eczar', serif;
+  font-weight: 800;
+  font-size: 3.5rem;
+  margin: .5em 0;
+}
+
+.quote-section {
+  position: relative;
+}
+
+.quote-section__fake {
+  visibility: hidden;
+}
+
+.typed-cursor {
+  color: #fff;
+}
+
+.quote-section__text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 0;
+}
+
+.page-header {
+  display: flex;
+}
+
+.logo {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: .72;
+  display: flex;
+  align-items: flex-end;
+}
+
+.logo svg {
+  display: block;
+  width: 4vmax;
+  height: 4vmax;
+  fill: none;
+  stroke: var(--color-background);
+  stroke-width: 9;
+  background: #ff6c6c;
+  stroke-dasharray: 150 150;
+  transition: 300ms stroke-dashoffset ease-in-out;
+  margin-right: .5rem;
+}
+.logo svg:hover {
+  stroke-dashoffset: 0;
+}
+
+.services {
+  font-family: 'Eczar', serif;
+  font-weight: 800;
+  font-size: 2rem;
+  line-height: 1.1;
+  margin: calc(calc(1.7vw + .3rem) * 2.25) 0 0.5em;
+  color: #000;
+}
+.services strong {
+  color: #ff6c6c;
+}
+
+.section {
+  padding: calc(7.55vw + .4rem) 0;
+}
+@media all and (max-width: 736px) {
+  .section {
+    padding: 1rem 0;
+  }
+}
+
+.intro {
+  background: var(--color-background);
+  color: var(--color-background--contrast);
+  padding-bottom: 0;
+}
+
+.design-width {
+  max-width: 36rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.contacts {
+  padding-top: 1rem;
+  padding-bottom: 2.5rem;
+  line-height: 1.3;
+}
+
+.contact {
+  display: flex;
+  flex: 0 0 50%;
+  padding-top: 1.5rem;
+}
+.contact span {
+  display: inline-block;
+  width: 5rem;
+}
+@media all and (max-width: 736px) {
+  .contact span {
+    width: auto;
+    font-weight: bold;
+    margin-right: 0.2em;
+  }
+  .contact span::after {
+    content: ':';
+  }
+}
+.contact h2 {
+  font-size: 2em;
+  margin-bottom: .25em;
+}
+@media all and (max-width: 736px) {
+  .contact {
+    display: block;
+    text-align: center;
+  }
+}
+
+.contact__img {
+  flex: 0 1 25%;
+}
+.contact__img img {
+  margin-top: -.7rem;
+  width: 100%;
+  -webkit-transform: translateX(-10%);
+          transform: translateX(-10%);
+}
+@media all and (max-width: 736px) {
+  .contact__img img {
+    -webkit-transform: none;
+            transform: none;
+    width: 80%;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+}
+
+.footer {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background: var(--color-background);
+  color: var(--color-background--contrast);
+  line-height: 1.4;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/102565/exalt-all.png);
+  background-size: 25% auto;
+  background-repeat: no-repeat;
+  background-position: 90% bottom;
+}
+
+.exalt-all {
+  display: block;
+  width: 100%;
+  margin-bottom: -1rem;
+}
+
+    </style>
+</head>
+<body translate="no">
+<div class="intro section">
+<div class="design-width">
+<div class="page-header">
+<h1 class="logo">
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+<path d="M0 75 C 75 75, 25 0, 100 0"></path>
+</svg>
+<span>Exalt</span>
+</h1>
+</div>
+<aside class="quote-section">
+<blockquote class="quote-section__fake">
+<p><span>Warum ist es immer so witzig bei euch? Ihr seid doch Buchhalter?</span></p>
+</blockquote>
+<blockquote class="quote-section__text">
+<p><span data-quote class="quote"></span></p>
+</blockquote>
+<img class="exalt-all" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/102565/exalt-all.png" alt="Exalt team" />
+</aside>
+</div>
+</div>
+<article class="services section">
+<div class="design-width">
+<h2 class="is-hidden">Dienstleistungen</h2>
+<p>{{{text}}}</p>
+</div>
+</article>
+<div class="contacts  design-width">
+<article class="contact">
+<div class="contact__img">
+<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/102565/michael.png" alt="Michael Lang" />
+</div>
+<div class="contact__info">
+<h2>Michael Lang</h2>
+<div><span>Telefon</span>044 240 30 90</div>
+<div><span>Mobile</span>079 438 51 15</div>
+<div><span>Mail</span><a href="mailto:mlang@exalt.biz">mlang@exalt.biz</a></div>
+</div>
+</article>
+<article class="contact">
+<div class="contact__img">
+<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/102565/exalt-esther.png" alt="Esther Neuenschwander" />
+</div>
+<div class="contact__info">
+<h2>Esther Neuenschwander</h2>
+<div><span>Telefon</span>044 240 30 92</div>
+<div><span>Mobile</span>076 424 02 13</div>
+<div><span>Mail</span><a href="mailto:eneuenschwander@exalt.biz">eneuenschwander@exalt.biz</a></div>
+</div>
+</article>
+<article class="contact">
+<div class="contact__img">
+<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/102565/franziska.png" alt="Franziska Frei" />
+</div>
+<div class="contact__info">
+<h2>Franziska Frei</h2>
+<div><span>Telefon</span>044 240 30 92</div>
+<div><span>Mobile</span>076 308 37 32</div>
+<div><span>Mail</span><a href="mailto:eneuenschwander@exalt.biz">ffrei@exalt.biz</a>
+</div>
+</div>
+</article>
+</div>
+<footer class="footer">
+<address class="design-width">
+<h2>Exalt LLC</h2>
+<div>Kalkbreitestrasse 69</div>
+<div>Telefon	044 240 30 90</div>
+<div>CH-8003 Zürich</div>
+</address>
+</footer>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js'></script>
+<script id="rendered-js">
+      var typed = new Typed('[data-quote]', {
+  strings: [
+  "Zu euch zu kommen ist schlimmer als zum Zahnarzt zu gehen.",
+  "Ihr seid strenger als meine Mutter.",
+  "Warum ist es immer so witzig bei euch? Ihr seid doch Buchhalter?",
+  "Meine Idee von Buchhalter war konservativer.",
+  "Ohne Esther wäre ich wohl im Gefängnis.",
+  "Ihr arbeitet schneller als ich Geld verdienen kann."],
+
+  typeSpeed: 40,
+  backSpeed: 10,
+  startDelay: 300,
+  backDelay: 3500,
+  shuffle: true,
+  loop: true,
+  loopCount: 1000 });
+    </script>
+<script src="https://static.codepen.io/assets/editor/live/css_reload-5619dc0905a68b2e6298901de54f73cefe4e079f65a75406858d92924b4938bf.js"></script>
+</body>
+</html>
