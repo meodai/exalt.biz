@@ -22,7 +22,9 @@
   },
   "homepage": "https://github.com/meodai/exalt.biz#readme",
   "devDependencies": {
+    "autoprefixer": "^9.6.0",
     "parcel-bundler": "^1.12.3",
+    "postcss-modules": "^1.4.1",
     "posthtml-expressions": "^1.1.1",
     "posthtml-load-config": "^1.0.0",
     "sass": "^1.21.0"
