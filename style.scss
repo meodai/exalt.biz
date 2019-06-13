@@ -1,6 +1,8 @@
 // meyer reset
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
-@import url('https://fonts.googleapis.com/css?family=Eczar:400,800|Work+Sans:500');
+
+// fonts (for reference, actually imported over HTML beacause of performance)
+// @import url('https://fonts.googleapis.com/css?family=Eczar:400,800|Work+Sans:500');
 
 // actual css
 :root {
@@ -26,9 +28,10 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 }
 
 html {
-  font-size: calc(1.55vw + .4rem);
+  font-size: calc(1.55vw + 0.4rem);
   font-family: 'Work Sans', sans-serif;
   background: var(--color-background);
+
   @media all and (max-width: 736px) {
     font-size: calc(1.55vw + .55rem);
   }
@@ -38,8 +41,8 @@ a {
   color: darken(#ff6c6c, 10%);
   text-decoration: none;
   display: inline-block;
-  padding: .1em 0.35em;
-  margin: -.1em -0.35em;
+  padding: 0.1em 0.35em;
+  margin: -0.1em -0.35em;
 
   &:hover {
     background: var(--color-highlight);
@@ -62,7 +65,7 @@ blockquote {
   font-family: 'Eczar', serif;
   font-weight: 800;
   font-size: 3.5rem;
-  margin: .5em 0;
+  margin: 0.5em 0;
 }
 
 .quote-section {
@@ -91,7 +94,7 @@ blockquote {
 .logo {
   text-align: center;
   font-size: 1.2rem;
-  line-height: .72;
+  line-height: 0.72;
   display: flex;
   align-items: flex-end;
 }
@@ -108,7 +111,7 @@ blockquote {
   stroke-dasharray: 150 150;
   //stroke-dashoffset: 150;
   transition: 300ms stroke-dashoffset ease-in-out;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 
   &:hover {
     stroke-dashoffset: 0;
@@ -121,7 +124,7 @@ blockquote {
   font-weight: 800;
   font-size: 2rem;
   line-height: 1.1;
-  margin: calc(1.7vw + .3rem) 0 0;
+  margin: calc(1.7vw + 0.3rem) 0 0;
   color: #000;
 
   @media all and (max-width: 736px) {
@@ -136,7 +139,7 @@ blockquote {
 }
 
 .section {
-  padding: calc(7.55vw + .4rem) 0;
+  padding: calc(7.55vw + 0.4rem) 0;
   background: var(--color-background--contrast);
   @media all and (max-width: 736px) {
     padding: 1rem 0;
@@ -184,7 +187,7 @@ blockquote {
 
   h2 {
     font-size: 2em;
-    margin-bottom: .25em;
+    margin-bottom: 0.25em;
   }
 
   @media all and (max-width: 736px) {
@@ -197,7 +200,7 @@ blockquote {
   flex: 0 1 25%;
 
   img {
-    margin-top: -.7rem;
+    margin-top: -0.7rem;
     width: 100%;
     transform: translateX(-10%);
 
@@ -227,7 +230,6 @@ blockquote {
   display: block;
   width: 100%;
   margin-bottom: -1rem;
-  // margin-bottom: -2rem;
 }
 
 #quotes {
