@@ -1,4 +1,13 @@
+# Titel im browser (tab)
 pageTitle: Exalt - Ihr Partner für unkomplizierte und solide Buchaltung
+
+# Besreibung für google und so
+# Include clearly-tagged facts in the descriptions. 
+# The descriptions don't have to be in sentence format. 
+# They can contain structured data
+seoDescription: Die Partner ihres Vertrausens für Buchhaltung, Orgnaisation, Administration, Beratung, Steuern und Supervision
+
+# Sprüche
 quotes:
   - Zu euch zu kommen ist schlimmer als zum Zahnarzt zu gehen.
   - Ihr seid strenger als meine Mutter.
@@ -6,6 +15,7 @@ quotes:
   - Meine Idee von Buchhalter war konservativer.
   - Ihr arbeitet schneller als ich Geld verdienen kann.
 
+# text nach den Sprüchen
 text: Und dennoch vertrauen uns unsere Kunden ihre **Buchhaltung**, **Organisation**, **Administration**, **Beratung**, **Steuern** und **Supervision** an.
 
 team:
@@ -27,7 +37,8 @@ team:
     mobile: 076 308 37 32
     mail: ffrei@exalt.biz
     image: franziska.png
-  
+
+# Addresse im Footer 
 address:
   - Exalt LLC
   - Kalbreitestrasse 69
