@@ -24,7 +24,7 @@
   "devDependencies": {
     "autoprefixer": "^9.6.0",
     "parcel-bundler": "^1.12.3",
-    "postcss-modules": "^1.4.1",
+    "postcss-modules": "^1.5.0",
     "posthtml": "^0.11.4",
     "posthtml-expressions": "^1.1.1",
     "posthtml-load-config": "^1.0.0",
